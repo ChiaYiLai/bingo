@@ -56,16 +56,14 @@ button:hover {
   color: rgba(255, 255, 255, 1);
 }
 .lines {
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1.5em;
   margin: 2rem 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   b {
     margin-right: 1rem;
-    font-size: 3em;
-    font-weight: 700;
+    font-size: 2em;
   }
 }
 .bingo-container {
@@ -92,7 +90,7 @@ button:hover {
   justify-content: center;
   background: rgba(255, 255, 255, 1);
   color: #333;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 700;
   cursor: pointer;
   transition: 0.4s;
@@ -200,7 +198,6 @@ button:hover {
 
 .box-call {
   margin-top: 3rem;
-  font-size: 16px;
   word-break: break-word;
   padding: 0 2rem;
   ul {

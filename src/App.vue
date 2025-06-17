@@ -9,7 +9,7 @@
     </h2>
     <div class="bingo-container">
       <div class="bingo-board">
-        <div v-for="num in bingoNumbers" :key="num" class="cell" :class="{ active: activeNumbers.includes(num) }" @click="markNumber(num)">
+        <div v-for="num in bingoNumbers" :key="num" class="cell" :class="{ active: activeNumbers.includes(num) }" @click="handleNum(num)">
           {{ num }}
         </div>
       </div>
@@ -67,18 +67,6 @@ const newGame = (): void => {
   activeNumbers.value = []
   calledNumbers.value = []
   lines.value = []
-}
-
-const markNumber = (num: number): void => {
-  const idx = activeNumbers.value.indexOf(num)
-  if (idx === -1) {
-    activeNumbers.value.push(num)
-    calledNumbers.value.push(num)
-  } else {
-    activeNumbers.value.splice(idx, 1)
-    calledNumbers.value.splice(idx, 1)
-  }
-  checkBingo()
 }
 
 const checkBingo = (): void => {
