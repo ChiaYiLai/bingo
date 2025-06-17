@@ -9,7 +9,7 @@
     </h2>
     <div class="bingo-container">
       <div class="bingo-board">
-        <div v-for="(num, idx) in bingoNumbers" :key="num" class="cell" :class="{ active: activeNumbers.includes(num) }" @click="markNumber(num)">
+        <div v-for="num in bingoNumbers" :key="num" class="cell" :class="{ active: activeNumbers.includes(num) }" @click="markNumber(num)">
           {{ num }}
         </div>
       </div>
